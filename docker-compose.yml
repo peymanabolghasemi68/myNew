@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  dockerhosttest:
+    image: ${DOCKER_REGISTRY-}dockerhosttest
+    build:
+      context: .
+      dockerfile: Dockerfile
